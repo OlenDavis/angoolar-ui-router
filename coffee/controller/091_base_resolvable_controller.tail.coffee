@@ -1,6 +1,5 @@
-root = window
 
-root.BaseResolvableController = class BaseResolvableController extends root.BaseController
+angoolar.BaseResolvableController = class BaseResolvableController extends angoolar.BaseController
 	# $_name: "BaseResolvableController" # This must be overriden in extending view controllers
 
 	$_dependencies: [ '$stateParams' ]
@@ -8,14 +7,14 @@ root.BaseResolvableController = class BaseResolvableController extends root.Base
 	$_resolvables: [] # This will hold a hash of BaseResolvable's by their $_makeName()'s
 
 	$_addResolvablesToAngular: ( resolvables ) ->
-		@$_resolvables = root.prototypallyMergePropertyArray @, '$_resolvables'
+		@$_resolvables = angoolar.prototypallyMergePropertyArray @, '$_resolvables'
 
 		resolvable::$_addToAngular resolvables for resolvable in @$_resolvables
 
 	$_makeDependencyArray: ->
 		super
 
-		@$_resolvables = root.prototypallyMergePropertyArray @, '$_resolvables'
+		@$_resolvables = angoolar.prototypallyMergePropertyArray @, '$_resolvables'
 
 		( @$_dependencies = _.without @$_dependencies, @$_resolvables... ).push @$_resolvables...
 

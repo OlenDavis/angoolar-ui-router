@@ -1,6 +1,5 @@
-root = window
 
-root.BaseResolvable = class BaseResolvable extends root.NamedDependent
+angoolar.BaseResolvable = class BaseResolvable extends angoolar.NamedDependent
 	# $_name: "BaseResolvable" # This must be declared in an extending resolvable to be able to be declared on a BaseState or BaseResolvableController
 
 	# This should either return a value that represents the resolution of this resolvable, or this
