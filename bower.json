@@ -1,34 +1,37 @@
 {
-	"name"       : "angoolar-ui-router",
-	"authors"    : [ "Olen Davis <spelledlikeitsounds@gmail.com>" ],
-	"description": "This defines several base classes that aid in the configuration and use of UI-Router states and their controllers.",
-	"keywords"   : [
-		"angoolar",
-		"angular",
-		"core",
-		"base",
-		"classes",
-		"stateful",
-		"config",
-		"run",
-		"block",
-		"StatefulConfigBlock",
-		"StatefulRunBlock",
-		"resolvable",
-		"controller",
-		"BaseResolvableController",
-		"BaseResolvable",
-		"coffeescript",
-		"object",
-		"oriented",
-		"framework",
-		"approach"
-	],
-	"license" : "MIT",
-	"homepage": "http://angoolar.com",
-	"ignore"  : [
-		"**/.*",
-		"node_modules",
-		"bower_components"
-	]
+  "name": "angoolar-ui-router",
+  "authors": [ "Olen Davis <spelledlikeitsounds@gmail.com>" ],
+  "description": "This defines several base classes that aid in the configuration and use of UI-Router states and their controllers.",
+  "keywords": [
+    "angoolar",
+    "angular",
+    "core",
+    "base",
+    "classes",
+    "stateful",
+    "config",
+    "run",
+    "block",
+    "StatefulConfigBlock",
+    "StatefulRunBlock",
+    "resolvable",
+    "controller",
+    "BaseResolvableController",
+    "BaseResolvable",
+    "coffeescript",
+    "object",
+    "oriented",
+    "framework",
+    "approach"
+  ],
+  "license": "MIT",
+  "homepage": "http://angoolar.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angoolar": "~0.5.0"
+  }
 }
