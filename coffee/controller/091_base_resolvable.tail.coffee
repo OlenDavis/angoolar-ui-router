@@ -1,4 +1,3 @@
-
 angoolar.BaseResolvable = class BaseResolvable extends angoolar.NamedDependent
 	# $_name: "BaseResolvable" # This must be declared in an extending resolvable to be able to be declared on a BaseState or BaseResolvableController
 
@@ -15,7 +14,7 @@ angoolar.BaseResolvable = class BaseResolvable extends angoolar.NamedDependent
 	resolve: -> null # by default, the resolvable resolves to null
 
 	$_dependentConstructor: ->
-		resolvable = super
+		resolvable = new @constructor arguments...
 		resolvable.resolve() # We return whatever the resolvable should resolve to (as opposed to a BaseController's $_dependentConstructor, which returns the controller)
 
 	$_addToAngular: ( resolvables ) ->
